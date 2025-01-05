@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <div>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Antras</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Gynaika</label>
+        </div>
+        <div>
+            <input type="checkbox" value="bike" id="bicycle">
+            <label for="bicycle">Podilato</label>
+            <input type="checkbox" value="motorcycle" id="motorcycle" checked>
+            <label for="motorcycle">Motosikleta</label>
+            <input type="checkbox" value="car" id="car">
+            <label for="car">Autokinhto</label>
+        </div>
+        <div>
+            <label for="nationality">Yphkoothta</label>
+            <select name="" id="nationality">
+                <option value="" disabled selected hidden>Epile3te Yphkoothta</option>
+                <option value="greek">Ellada</option>
+                <option value="english">Agglia</option>
+                <option value="spanish">Ispania</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Prosvpika stoixeia</legend>
+            <div>
+                <label for="fistname">Onoma :</label>
+                <input type="text" id="firstname" placeholder="Eisagete Onoma" required minlength="5" maxlength="20">
+            </div>
+            <div>
+                <label for="lastname">Epi8eto :</label>
+                <input type="text" id="lastname" placeholder="Eisagete Epi8eto" required minlength="5" maxlength="20">
+            </div>
+            <div>
+                <label for="">Xronia Prouphresias</label>
+                <input type="number" id="workExperience" minlength="2" maxlength="10">
+            </div>
+        </fieldset>
+        <div>
+            <label for="">Xronologia gennhshs</label>
+            <input type="date" id="birthday" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <input type="submit" value="Ypobolh">
+            <input type="reset" value="Epanafora">
+        </div>
+    </form>
+</body>
+</html>

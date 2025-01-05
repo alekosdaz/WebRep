@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="d-flex flex-row align-center bg-gov-blue">
+        <div>
+            <img class="img-gov" src="../images/gov_gr-thumb-540.png" alt="Gov gr">
+        </div>
+        <nav class="mr-1">
+            <ul class="d-flex flex-row font-size-1 text-lightgrey-200">
+                <li class="list-style-none">
+                    <span class="border border-white border-radius-15 p-1">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </li>
+                <li class="list-style-none">
+                    <span class="mr-1">ΜΕΝΕΛΑΟΣ ΓΟΥΛΑΝΔΡΗΣ</span>
+                    <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="d-flex flex-row">
+        <aside class="bg-gov-blue text-lightgrey-200 p-1">
+            <p class="mb-1 font-size-1">
+                <i class="fa-solid fa-house"></i>
+                <a class="text-white text-decoration-none" href="../index.html">Αρχική</a>
+            </p>
+            <p class="mb-1 font-size-1"> 
+                <i class="fa-solid fa-chevron-down"></i>
+                Δηλώσεις Καθαρισμού
+            </p>
+            <p class="mb-1 font-size-075 pl-1">
+                Προβολή Δηλώσεων
+            </p>
+            <p class="font-size-075 pl-1 text-yellow">
+                Υποβολή Δήλωσης
+            </p>
+        </aside>
+        <main>
+            <section class="p-1">
+                <h1 class="text-center font-size-2 mb-2 mt-2">Υποβολή Δήλωσης Καθαρισμού Οικοπέδου</h1>
+                <div class="d-flex flex-row align-center">
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 active m-auto" >1</span>
+                        </p>
+                        <p class="text-center">Στοιχεία Οικοπέδου</p>
+                    </div>
+                    <div class="bg-yellow flex-grow-1">
+                        <span class="stepper-border-bottom"></span>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 m-auto">2</span>
+                        </p>
+                        <p>Στοιχεία Ιδιοκτήτη</p>
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="stepper-border-bottom"></span>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="d-block stepper-circle border border-lightgrey-200 m-auto">3</span>
+                        </p>
+                        <p>Ενέργειες Ιδιοκτήτη</p>
+                   </div>
+                </div>
+            </section>
+            <section class="p-1">
+
+                <h2 class="text-center font-size-2 mb-2 mt-2">Στοιχεία Οικοπέδου</h2>
+                <p class="border border-lightgrey-300 bg-lightgrey-200 text-lightgrey-500 p-1">Παρακαλώ εισάγετε στοιχεία οικοπέδου</p>
+
+                <form class="mt-1">
+                    <div class="mb-2">
+                        <span><strong>Εντοπισμός Οικοπέδου:</strong></span>
+                        <input class="ml-1" type="radio" checked="checked" name="fieldRadio" id="kaek">
+                        <label class="ml-05" for="kaek">ΚΑΕΚ</label>
+                        <input class="ml-1" type="radio" name="fieldRadio" id="coordinates">
+                        <label class="ml-05" for="coordinates">Συντεταγμένες(x,y)</label>
+                        <span class="ml-1 info">i</span>
+                    </div>
+
+                    <div class="mb-2">
+                        <p>Παρακαλώ εισάγετε το KAEK του οικοπέδου και πατήστε αναζήτηση</p>
+                        <fieldset>
+                            <legend class="font-size-075 text-lightgrey-500">ΚΑΕΚ*</legend>
+                            <input class="col-12 h-2 no-border pl-1" type="text">
+                        </fieldset>
+                        <span class="text-info">Εισάγετε το ΚΑΕΚ του οικοπέδου</span>
+                    </div>
+
+                    <div class="mb-2 d-flex flex-row">
+                        <div class="col-6">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Νομός*</legend>
+                                <select class="no-border col-12 h-2 pl-1 bg-white" name="" id="">
+                                    <option value="">Χανιών</option>
+                                    <option value="">Αττικής</option>
+                                    <option value="">Ιωαννίνων</option>
+                                </select>
+                            </fieldset>
+                            <span class="text-info">Επιλέξτε Νομό</span>
+                        </div>
+                        <div class="col-6 ml-1">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Δήμος*</legend>
+                                <select class="no-border col-12 bg-white pl-1 h-2" name="" id="">
+                                    <option value="">Δήμος 1</option>
+                                    <option value="">Δήμος 2</option>
+                                    <option value="">Δήμος 3</option>
+                                </select>
+                            </fieldset>
+                            <span class="text-info">Επιλέξτε Δήμο</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 d-flex flex-row">
+                        <div class="col-6">
+                            <input class="col-12 h-25 pl-1" type="text" placeholder="Δημοτική Ενότητα">
+                            <span class="text-info">Εισάγετε Δημοτική Ενότητα</span>
+                        </div>
+                        <div class="col-6 ml-1">
+                            <input class="col-12 h-25 pl-1" type="text" placeholder="Οικισμός">
+                            <span class="text-info">Εισάγετε Οικισμό</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 d-flex flex-row">
+                        <div class="col-4">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Οδός</legend>
+                                <input class="no-border col-12 h-2 pl-1" type="text" name="" id="">
+                            </fieldset>
+                            <span class="text-info">Εισάγετε οδό</span>
+                        </div>
+                        <div class="col-4 ml-1">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Αριθμός</legend>
+                                <input class="no-border col-12 h-2 pl-1" type="text">
+                            </fieldset>
+                            <span class="text-info">Εισάγετε αριθμό</span>
+                        </div>
+                        <div class="col-4 ml-1">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">T.K</legend>
+                                <input class="no-border col-12 h-2 pl-1" type="text">
+                            </fieldset>
+                            <span class="text-info">Εισάγετε T.K</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row justify-end">
+                        <a class="bg-green text-white p-1 text-decoration-none" href="./form2.html">
+                            Επόμενο 
+                            <span class="ml-05"><i class="fa-solid fa-greater-than"></i></span>
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="bg-lightgrey-300">
+        <div class="p-2">
+             <p class="mb-2"><a href="">Όροι και Πρυποθέσεις</a></p>
+             <p>Υλοποίηση για το <a href="">Υπουργείο Ψηφιακής ΔΙακυβέρνησης</a> </p>
+        </div> 
+        <div class="p-2">
+             <img src="../images/government-logo2.svg" alt="GR Logo">
+        </div>
+     </footer>
+</body>
+</html>

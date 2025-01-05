@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+}
+
+.gradient-to-right{
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: linear-gradient(to right,green,red);
+}
+
+.gradient-to-lefttop{
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: linear-gradient(to left top,violet,orange);
+    
+}
+

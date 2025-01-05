@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov-login</title>
+    <link rel="stylesheet" href="./exersise-gov-login.css">
+</head>
+<body>
+    <div class="wrapper">
+
+		<div class="container-mine">
+
+			<header class="banner">
+
+				<div class="banner__left-logo">
+					<img src="../images/ggps.png" alt="GSIS Logo" style="width: 80%;" />
+				</div>
+
+				<div class="banner__right-logo">
+					<img src="../images/ed.png" alt="GSIS Logo" />
+				</div>
+			</header>
+
+			<div class="header-area">
+				<h1>Αυθεντικοποίηση Χρήστη</h1>
+			</div>
+
+			<div class="error-area">
+
+				
+
+				
+
+			</div>
+
+			<div class="form-horizontal">
+
+				<form id="login-form" action="j_spring_security_check" method="post" role="form">
+
+					<div class="form-header-group">
+						<h2>Σύνδεση</h2>
+						<p class="form-sub-header"> Παρακαλώ εισάγετε τους κωδικούς σας στο <strong>TaxisNet</strong> για να συνδεθείτε.</p>
+						<hr />
+					</div>
+
+					<div class="input-wrapper">
+						<div class="form-group">
+							<div class="text-box1"><label for="j_username">Χρήστης:</label></div><div class="text-box2"><input id="v" class="form-control" type='text' name='j_username' />
+                            </div>
+						</div>
+					</div>
+
+					<div class="input-wrapper">
+						<div class="form-group">
+							<div class="text-box1"><label for="j_password">Κωδικός:</label></div>
+                            <div class="text-box2"><input id="j_password" class="form-control" type='password' name='j_password' />
+                            </div>
+						</div>
+					</div>
+
+					<div class="input-wrapper">
+						<button id="btn-login-submit" class="btn btn-primary submit-button" type="button">Σύνδεση</button>
+					</div>
+
+					<input type="hidden" name="" value="" />
+
+				</form>
+
+			</div>
+
+			<div>
+				<h5 class="form-footer">
+					<a href="https://gsis.gr/dimosia-dioikisi/ked">Κέντρο Διαλειτουργικότητας (ΚΕ.Δ.) Υπουργείου Ψηφιακής Διακυβέρνησης</a>
+				</h5>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>

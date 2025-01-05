@@ -1,0 +1,400 @@
+:root {
+    --gov-blue: #003475;
+    --navy: #002e94;
+    --blue: #083aa9;
+    --white:#fff;
+    --lightgrey-200:#ecebec;
+    --lightgrey-300:#cdccce;
+    --lightgrey-500:#99989c;
+    --yellow:rgb(130, 130, 4);
+    --green:#006736;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    height: 105px;
+    border-bottom: 10px solid var(--blue);
+}
+
+header .img-gov {
+    height: 100px;
+    width: auto;
+}
+
+nav {
+    width: 80%;
+}
+
+/* Footer Styling */
+ footer {
+    width: 100%;
+    border-top: 10px solid var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ footer img {
+    height: 75px;
+    width: auto;
+ }
+
+footer a:visited {
+    color: var(--blue)
+}
+
+/* Main Styling */
+aside {
+    flex:25%
+}
+
+aside a:visited {
+    color: var(--white)
+}
+
+main {
+    flex:75%;
+    height: calc(100vh - 105px);
+    overflow: auto;
+}
+
+/* Stepper Styling */
+.stepper-circle {
+    width: 30px;
+    height: 30px;
+    color:var(--white);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: var(--lightgrey-300);
+}
+
+.stepper-border-bottom {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--lightgrey-300);
+}
+
+.active {
+    background-color: var(--gov-blue);
+}
+
+/* Form Styling */
+.info {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gov-blue);
+    color: var(--lightgrey-200);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.text-info {
+    color:var(--lightgrey-500);
+    font-size: smaller;
+    padding-left: 1rem;
+}
+
+/* General Styling */
+
+/* Displays */
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+/* Backgrounds */
+.bg-gov-blue {
+    background-color: var(--gov-blue);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-lightgrey-200 {
+    background-color: var(--lightgrey-200);
+}
+
+.bg-lightgrey-300 {
+    background-color: var(--lightgrey-300);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* Text Styling */
+.font-size-075 {
+    font-size: .75rem;
+}
+
+.font-size-1 {
+    font-size: 1rem;
+}
+
+.font-size-2 {
+    font-size: 2rem;
+}
+
+.text-lightgrey-200 {
+    color: var(--lightgrey-200);
+}
+
+.text-lightgrey-500 {
+    color:var(--lightgrey-500);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Margins and Paddings */
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.ml-05 {
+    margin-left: .5rem;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.pl-1{
+    padding-left: 1rem;
+}
+
+/* Borders */
+.no-border {
+    border: 0;
+}
+
+.border {
+   border-style:solid;
+   border-width: 1px; 
+}
+
+.border-white {
+    border-color: var(--white);
+}
+
+.border-radius-15 {
+    border-radius: 15%;
+}
+
+.border-lightgrey-200 {
+    border-color: var(--lightgrey-200);
+}
+
+.border-lightgrey-300 {
+    border-color: var(--lightgrey-300);
+}
+
+/* Links - Lists */
+.list-style-none {
+    list-style: none;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+/* Width -Height */
+.col-1 {width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%}
+.col-6 {width:50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width:100%}
+
+.h-2 {
+    height: 2rem;
+}
+
+.h-25 {
+    height: 2.5rem;
+}
+
+/* Γενικές ρυθμίσεις */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 1rem;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    padding: 2rem;
+}
+h1 {
+    color: #003366;
+    text-align: center;
+}
+.form-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.radio-buttons label {
+    font-weight: normal;
+    margin-right: 1rem;
+}
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.declaration {
+    margin-top: 2rem;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.back-button {
+    background-color: #999;
+}
+.submit-button {
+    background-color: #28a745;
+}
+.radio-buttons {
+    display: flex;
+    gap: 1rem; /* Ορίζει την απόσταση μεταξύ των radio buttons */
+}
+
+.radio-buttons label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem; /* Μικρή απόσταση μεταξύ του κουμπιού και του κειμένου */
+}

@@ -1,0 +1,10 @@
+p {
+    font-weight: bold;
+    word-spacing: 20px;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+#header {
+    color: red;
+}

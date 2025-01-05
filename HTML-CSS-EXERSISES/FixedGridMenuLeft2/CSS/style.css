@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+}
+
+.container {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 25% 75%;    
+    
+}
+
+nav {
+    flex: 25%;
+    background-color: lightblue;
+    height: 100px;
+    margin-top: 20px;
+}
+
+main {
+    margin-top: 20px;
+    flex: 75%;
+    background-color: brown;
+}
+
+@media (max-width:600px){
+    .container {
+        grid-template-columns: 100%;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+}
